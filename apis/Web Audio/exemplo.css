@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+
+.conteudo {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: #0cd4be;
+}
+
+audio {
+  margin: 0 auto;
+}
+.Bar{
+  color: red;
+  background-color:  grey;
+  border-radius: 10px;
+  height: 20px;
+  text-align: center;
+
+}
