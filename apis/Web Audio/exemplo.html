@@ -6,15 +6,17 @@
   </head>
   <body id="corpo">
 
-    <div class = 'conteudo'>
-      <h2>Frequency Bar</h2>
-      <input min="0" max="100" value="100" oninput="Frequencia.changeVolume(this);" type="range"></input>
-      <h2>Volume Bar</h2>
-      <input min="0" max="100" value="100" oninput="volume.changeVolume(this);" type="range"></input>
-      <h2>Crossing Bar</h2>
-      <input min="0" max="100" value="100" oninput="crossfade(this);" type="range"></input>
-      <button id='play'>Play/Stop</button>
+    <div class='conteudo'>
+        <h2>Frequency Bar</h2>
+        <input min="0" max="100" value="100" oninput="Frequencia.changeVolume(this);" type="range"></input>
+        <h2>Volume Bar</h2>
+        <input min="0" max="100" value="100" oninput="volume.changeVolume(this);" type="range"></input>
+        <h2>Crossing Bar</h2>
+        <input min="0" max="100" value="0" oninput="crossfade(this);" type="range"></input>
+        <br>
+        <button id='play'>Play/Stop</button>
     </div>
+
 
     <script src='exemplo.js'></script>
 

@@ -13,6 +13,7 @@ var volume  = context.createGain();
 var playing = false;
 
 
+
 document.getElementById("play").addEventListener("click", function(){
   if(!playing){
     musica1 = context.createBufferSource();
@@ -28,6 +29,10 @@ document.getElementById("play").addEventListener("click", function(){
 
     carregaSom('musica.mp3', musica1);
     carregaSom('musica2.mp3', musica2);
+
+    filtromix1.gain.value = 1;
+    filtromix2.gain.value = 0;
+
     musica1.start();
     musica2.start();
     playing = true;
@@ -44,6 +49,7 @@ document.getElementById("play").addEventListener("click", function(){
 //Funcao para interpolar as 2 musicas
 crossfade = function(element) {
   var x = parseInt(element.value) / parseInt(element.max);
+  console.log(element.value+ "  " + x);
   // Use an equal-power crossfading curve:
   var gain1 = Math.cos(x * 0.5*Math.PI);
   var gain2 = Math.cos((1.0 - x) * 0.5*Math.PI);
