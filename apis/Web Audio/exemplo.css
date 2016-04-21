@@ -1,22 +1,63 @@
 body {
-  background-color: black;
+  background-color: lightblue;
 }
 
 .conteudo {
-  width: 80%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 20%;
   margin: 0 auto;
   text-align: center;
-  color: #0cd4be;
+  color: black;
+  background-color: #1a66ff;
+  font-family: sans-serif;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
 }
 
-audio {
-  margin: 0 auto;
-}
-.Bar{
-  color: red;
-  background-color:  grey;
-  border-radius: 10px;
-  height: 20px;
+button {
+  margin: 30px 0px 10px ;
+  width: 50%;
+  height: 40px;
+  font-family:
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 25px;
+  color: white;
+  background-color: #bfbfbf;
+  border: none;
+  border-radius: 2px;
   text-align: center;
-
+  text-decoration: none;
+  display: inline-block;
+  -ms-transition: transform 0.1s ease-in-out;
+  -moz-transition: transform 0.1s ease-in-out;
+  -ms-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+}
+button:hover {
+  box-shadow: 3px 3px 20px black;
+  color: #bfbfbf;
+  background-color: white;
+  transform: translateY(-2px);
+}
+input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+input {
+    line-height: normal;
+    *overflow: visible;
+}
+input {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+input {
+    font-family: sans-serif;
+    color: #222;
 }
