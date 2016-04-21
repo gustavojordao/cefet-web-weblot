@@ -10,6 +10,7 @@ body {
   text-align: center;
   color: black;
   background-color: #1a66ff;
+  min-width: 300px;
   font-family: sans-serif;
   border-radius: 5px;
   box-shadow: 5px 5px 5px black;
