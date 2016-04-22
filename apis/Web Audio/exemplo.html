@@ -7,14 +7,23 @@
   <body id="corpo">
 
     <div class='conteudo'>
-        <h2>Frequency Bar</h2>
-        <input min="0" max="100" value="100" oninput="Frequencia.changeVolume(this);" type="range"></input>
-        <h2>Volume Bar</h2>
-        <input min="0" max="100" value="100" oninput="volume.changeVolume(this);" type="range"></input>
-        <h2>Crossing Bar</h2>
-        <input min="0" max="100" value="0" oninput="crossfade(this);" type="range"></input>
-        <br>
-        <button id='play'>Play/Stop</button>
+        <input class='music' type="text" id="track1" required/>
+        <input class='music' type="text" id="track2" required/>
+        <div class='esquerda'>
+          <h2>Drop Bass</h2>
+          <input min="0" max="100" value="100" oninput="Frequencia.changeVolume(this);" type="range"></input>
+        </div>
+
+        <div class='direita'>
+          <h2>Frequency Bar</h2>
+          <input min="0" max="100" value="100" oninput="Frequencia.changeVolume(this);" type="range"></input>
+          <h2>Volume Bar</h2>
+          <input min="0" max="100" value="100" oninput="volume.changeVolume(this);" type="range"></input>
+          <h2>Crossing Bar</h2>
+          <input min="0" max="100" value="0" oninput="crossfade(this);" type="range"></input>
+          <br>
+          <button id='play'>Play/Stop</button>
+        </div>
     </div>
 
 

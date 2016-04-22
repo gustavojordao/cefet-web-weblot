@@ -2,16 +2,26 @@ var AudioContext = window.AudioContext ||
                     window.webkitAudioContext;
 var context = new AudioContext();
 
+
+
 var musica1 = context.createBufferSource();
 var musica2 = context.createBufferSource();
 
 var filtromix1   = context.createGain();
 var filtromix2   = context.createGain();
 
+var dropbass  = context.createBiquadFilter();
+  //Definindo o tipo do filtro como passa baixas
+dropbass.type = 'lowpass';
+  //Definindo limite do filtro
+dropbass.frequency.value = 440;
+
 var volume  = context.createGain();
 
 var playing = false;
 
+var input1 = document.getElementById('track1');
+var input2 = document.getElementById('track2');
 
 
 document.getElementById("play").addEventListener("click", function(){
@@ -22,13 +32,16 @@ document.getElementById("play").addEventListener("click", function(){
     musica1.connect(filtromix1);
     musica2.connect(filtromix2);
 
+    musica1.path = "tracks/" + input1.value + ".mp3";
+    musica2.path = "tracks/" + input2.value + ".mp3";
+
     filtromix1.connect(volume);
     filtromix2.connect(volume);
 
     volume.connect(context.destination);
 
-    carregaSom('musica.mp3', musica1);
-    carregaSom('musica2.mp3', musica2);
+    carregaSom(musica1.path, musica1);
+    carregaSom(musica2.path, musica2);
 
     filtromix1.gain.value = 1;
     filtromix2.gain.value = 0;
@@ -67,8 +80,6 @@ volume.changeVolume = function(element) {
   console.log(fraction*fraction);
   volume.gain.value = fraction * fraction;
 };
-
-
 
 
 
