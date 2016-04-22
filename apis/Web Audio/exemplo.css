@@ -36,7 +36,8 @@ h2 {
 }
 button {
   min-width: 150px;
-  margin: 30px 0px 10px ;
+  margin: 30px 20px 10px 0px;
+  transform: translateX(-42px);
   width: 50%;
   height: 40px;
   font-family:
@@ -61,7 +62,7 @@ button:hover {
   box-shadow: 3px 3px 20px black;
   color: #bfbfbf;
   background-color: white;
-  transform: translateY(-2px);
+  transform: translateX(-42px) translateY(-2px);
 }
 input[type="button"], input[type="reset"], input[type="submit"] {
     cursor: pointer;

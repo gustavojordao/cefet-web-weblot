@@ -2,8 +2,6 @@ var AudioContext = window.AudioContext ||
                     window.webkitAudioContext;
 var context = new AudioContext();
 
-
-
 var musica1 = context.createBufferSource();
 var musica2 = context.createBufferSource();
 
@@ -23,9 +21,10 @@ var playing = false;
 var input1 = document.getElementById('track1');
 var input2 = document.getElementById('track2');
 
-
+//Funcao de tocar e pausar musicas
 document.getElementById("play").addEventListener("click", function(){
   if(!playing){
+
     musica1 = context.createBufferSource();
     musica2 = context.createBufferSource();
 
@@ -38,13 +37,17 @@ document.getElementById("play").addEventListener("click", function(){
     filtromix1.connect(volume);
     filtromix2.connect(volume);
 
-    volume.connect(context.destination);
+    volume.connect(dropbass);
+
+    dropbass.connect(context.destination);
 
     carregaSom(musica1.path, musica1);
     carregaSom(musica2.path, musica2);
 
     filtromix1.gain.value = 1;
     filtromix2.gain.value = 0;
+
+    dropbass.frequency.value = 5000;
 
     musica1.start();
     musica2.start();
@@ -81,6 +84,24 @@ volume.changeVolume = function(element) {
   volume.gain.value = fraction * fraction;
 };
 
+
+
+dropaBass = function(element) {
+  // Interpolar a frequencia entre a minima e metade da fornecida
+  var minValue = 40;
+  var maxValue = context.sampleRate / 2;
+  // Logarithm (base 2) to compute how many octaves fall in the range.
+  var numberOfOctaves = Math.log(maxValue / minValue) / Math.LN2;
+  // Compute a multiplier from 0 to 1 based on an exponential scale.
+  var multiplier = Math.pow(2, numberOfOctaves * (element.value - 1.0));
+  // Get back to the frequency value between min and max.
+  dropbass.frequency.value = maxValue * multiplier;
+};
+
+
+changeQuality = function(element) {
+  dropbass.Q.value = element.value * 30;
+};
 
 
 
