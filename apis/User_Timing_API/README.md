@@ -1,7 +1,7 @@
 # cefet-web-weblot
 ## User Timing API
 A API reúne vários métodos para poder fazer medições de tempo e apartir disso avaliar os hotspots e otimizar o site.
-![Exemplo da User Timing API funcionando](img/imagem.jpg)
+![Exemplo da User Timing API funcionando](img/imagem.png)
 
 ## Links
 
