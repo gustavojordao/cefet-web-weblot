@@ -8,9 +8,11 @@ A API reúne vários métodos para poder fazer medições de tempo e apartir dis
 _User Timing API_: [Exemplo Vivo][User-codigo].
 _Slides_: [Apresentação][present].
 
-## Créditos
-Gabriel Álves de Campos Mattar
-Guilherme Fernandes Marchezini
+
+**Cŕeditos**:
+  - Gabriel Álves de Campos Mattar
+  - Guilherme Fernandes Marchezini
+
 
 As informações dos slides foram retiradas dos sites [1][site1] e [2][site2].
 
