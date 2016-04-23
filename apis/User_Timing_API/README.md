@@ -3,10 +3,9 @@
 A API reúne vários métodos para poder fazer medições de tempo e apartir disso avaliar os hotspots e otimizar o site.
 ![Exemplo da User Timing API funcionando](img/imagem.png)
 
-## Links
-
-_User Timing API_: [Exemplo Vivo][User-codigo].
-_Slides_: [Apresentação][present].
+**Links**:
+  - _User Timing API_: [Exemplo Vivo][User-codigo].
+  - _Slides_: [Apresentação][present].
 
 
 **Cŕeditos**:
