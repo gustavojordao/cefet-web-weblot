@@ -22,7 +22,8 @@ var playing = false;
 
 var input1 = document.getElementById('track1');
 var input2 = document.getElementById('track2');
-
+var t = performance.now();
+console.log('Exemplo do now ' + t + ' milisegundos');
 //Funcao de tocar e pausar musicas
 document.getElementById("play").addEventListener("click", function(){
   if(!playing){
@@ -68,8 +69,8 @@ document.getElementById("play").addEventListener("click", function(){
   var items = window.performance.getEntriesByType('measure');//imprime
   for (i = i; i < Object.keys(items).length; i++) {
     var req = items[i];
-    console.log('XHR ' + req.name + ' took ' + req.duration + 'ms');
-    
+    console.log(req.name + ' took ' + req.duration + 'ms');
+
   }
 });
 
@@ -131,6 +132,7 @@ function carregaSom(url, musiquinha) {
     reqCnt++;
     window.performance.measure('Carregamento_do_XMHL_' + reqCnt, 'ComecaXMLH', 'TerminaXMLH');
 
+
     context.decodeAudioData(request.response, function(buffer) {
 
       musiquinha.buffer = buffer;
@@ -148,6 +150,6 @@ function carregaSom(url, musiquinha) {
 var items = window.performance.getEntriesByType('measure');
 for (var i = 0; i < items.length(); ++i) {
   var req = items[i];
-  console.log('XHR ' + req.name + ' took ' + req.duration + 'ms');
+  console.log(req.name + ' took ' + req.duration + 'ms');
 }
 */
