@@ -16,7 +16,7 @@ A API envolve manipulação de operações de áudios dentro de um contexto de �
 
 As informações dos slides foram retiradas dos sites [1][site1] e [2][site2].
 
-[User-codigo]: 
+[User-codigo]: http://marchezinixd.github.io/Web%20Audio/exemplo
 [present]: https://docs.google.com/presentation/d/1j6fONdSOIcmNdBD6r9LpEEAi6qFYhLElxsWx1Pjz57s/edit?usp=sharing
 [site1]: https://developer.mozilla.org/pt-BR/docs/Web/API/API_Web_Audio
 [site2]: https://www.w3.org/TR/webaudio/
