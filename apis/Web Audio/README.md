@@ -10,7 +10,7 @@ A API envolve manipulação de operações de áudios dentro de um contexto de �
 
 
 **Cŕeditos**:
-  - Gabriel Álves de Campos Mattar
+  - Gabriel Alves de Campos Mattar
   - Guilherme Fernandes Marchezini
 
 
