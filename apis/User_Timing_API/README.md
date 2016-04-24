@@ -9,7 +9,7 @@ A API reúne vários métodos para poder fazer medições de tempo e apartir dis
 
 
 **Cŕeditos**:
-  - Gabriel Álves de Campos Mattar
+  - Gabriel Alves de Campos Mattar
   - Guilherme Fernandes Marchezini
 
 
