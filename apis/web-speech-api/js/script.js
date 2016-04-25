@@ -33,10 +33,6 @@ if (!('webkitSpeechRecognition' in window)) {
         
         document.getElementById('final-span').innerHTML = finalTranscript;
         document.getElementById('interim-span').innerHTML = interimTranscript;
-        
-        console.log(interimTranscript);
-        console.log(finalTranscript);
-        
     };
 }
 

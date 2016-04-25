@@ -3,6 +3,18 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 /* CLASSES */
+.authors {
+    font-size: 1em;
+    font-weight: 700;
+    
+    margin-top: -10px;
+    padding: 0;
+}
+
+.authors > em {
+    font-family: 'Megrim', cursive;
+}
+
 .flex-column-container {
     display: flex;
     flex-direction: column;
@@ -19,9 +31,22 @@
     display: none;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
 /* IDs */
-#mic {
+#icon {
     width: 60px;
+    padding: 0 10px;
     
     -webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
@@ -30,7 +55,7 @@
     transition: all 100ms ease-in-out;
 }
 
-#mic:hover {
+#icon:hover {
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -o-transform: scale(1.5);
@@ -39,18 +64,18 @@
 }
 
 #not-supported {
-    color: #66ff00;
+    color: #CCFF00;
     font-family: 'Poiret One', cursive;
     font-size: 1.5em;
 }
 
 #interim-span {
-    color: #ffba00;
+    color: #CCFF00;
 }
 
 /* TAGS */
 body {
-    background-color: #db143c;
+    background-color: #DB143C;
 }
 
 button {
@@ -65,15 +90,29 @@ button:hover {
 }
 
 em {
-    color: #66ff00;
+    color: #CCFF00;
     font-style: normal;
+    font-weight: bold;
     
     display: inline-block;
     margin-top: 5px;
 }
 
+section {
+    color: #FFFFFF;
+    font-family: 'Poiret One', cursive;
+    font-size: .9em;
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+section > em {
+    font-family: 'Megrim', cursive;
+}
+
 h1 {
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: 'Megrim', cursive;
     font-size: 6em;
     
@@ -81,19 +120,18 @@ h1 {
 }
 
 p {
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: 'Poiret One', cursive;
     font-size: 1.2em;
-    text-align: left;
-    
-    padding-left: 10px;
+    text-align: inherit;
 }
 
 span {
-    color: #66ff00;
+    color: #00FFEB;
     font-family: 'Megrim', cursive;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: 700;
     
+    margin: 10px;
     padding: 10px;
 }

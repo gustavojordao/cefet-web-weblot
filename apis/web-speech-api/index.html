@@ -9,23 +9,44 @@
     </head>
     
     <body class="flex-column-container">
-        <h1>Web Speech API</h1>
+        <h1>Web Spell API</h1>
+        <p>also known as the <em>Web Speech API</em> in the muggle world</p>
+        
+        <section>
+            Designed by the mages<br>
+            <em>Cassiano</em> and <em>Pedro Felipe</em> for<br>
+            <em>Sir Fegemo's JavaScripta Kingdom</em>
+        </section>
         
         <div class="flex-row-container">
-            <button id="toggle-speech" class="float-left" onclick="toggleRecognition(event)">
-                <img src="img/mic.svg" alt="Microphone" id="mic">
+            <div class="text-right">
+                <p>click on the book<br>
+                    <em id="start-speech">TO START</em>
+                    <em id="stop-speech" class="hidden">TO STOP</em>
+                    <br>spell recognition
+                </p>
+            </div>
+            
+            <button id="toggle-speech" onclick="toggleRecognition(event)">
+                <img src="img/book.svg" alt="Microphone" id="icon">
             </button>
             
-            <p>Click on the mic<br>
-                <em id="start-speech">TO START</em>
-                <em id="stop-speech" class="hidden">TO STOP</em>
-                <br>recognition
-            </p>
+            <button id="toggle-synthesis">
+                <img src="img/wand.svg" alt="Microphone" id="icon">
+            </button>
+            
+            <div class="text-left">
+                <p>click on the wand<br>
+                    <em id="start-synthesis">TO START</em>
+                    <em id="stop-synthesis" class="hidden">TO STOP</em>
+                    <br>spell synthesis
+                </p>
+            </div>
         </div>
         
-        <span class="hidden" id="not-supported">Oh no! Your browser doesn't support this API!</span>
+        <span class="hidden" id="not-supported">Oh no! Your muggle browser doesn't support this API!</span>
         
-        <div id="results">
+        <div id="results" class="text-center">
             <span id="final-span"></span>
             <span id="interim-span"></span>
         </div>
