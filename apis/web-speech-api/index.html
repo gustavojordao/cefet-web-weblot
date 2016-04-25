@@ -5,7 +5,6 @@
         <title>Web Speech API Example</title>
         
         <link rel="stylesheet" href="css/stylesheet.css">
-        <script src="js/script.js"></script>
     </head>
     
     <body class="flex-column-container">
@@ -13,7 +12,7 @@
         <p>also known as the <em>Web Speech API</em> in the muggle world</p>
         
         <section>
-            Designed by the mages<br>
+            designed by the mages<br>
             <em>Cassiano</em> and <em>Pedro Felipe</em> for<br>
             <em>Sir Fegemo's JavaScripta Kingdom</em>
         </section>
@@ -28,11 +27,11 @@
             </div>
             
             <button id="toggle-speech" onclick="toggleRecognition(event)">
-                <img src="img/book.svg" alt="Microphone" id="icon">
+                <img src="img/book.svg" alt="Microphone" class="icon">
             </button>
             
             <button id="toggle-synthesis">
-                <img src="img/wand.svg" alt="Microphone" id="icon">
+                <img src="img/wand.svg" alt="Microphone" class="icon">
             </button>
             
             <div class="text-left">
@@ -44,12 +43,18 @@
             </div>
         </div>
         
-        <span class="hidden" id="not-supported">Oh no! Your muggle browser doesn't support this API!</span>
+        <span class="hidden" id="sr-not-supported">
+            Oh no! Your muggle browser doesn't support the Speech Recognition API!
+        </span>
+        <span class="hidden" id="ss-not-supported">
+            Oh no! Your muggle browser doesn't support the Speech Synthesis API!
+        </span>
         
         <div id="results" class="text-center">
             <span id="final-span"></span>
             <span id="interim-span"></span>
         </div>
         
+        <script src="js/script.js"></script>
     </body>
 </html>

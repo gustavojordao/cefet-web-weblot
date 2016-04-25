@@ -4,7 +4,7 @@ var finalTranscript = '';
 // Speech Recognition API
 if (!('webkitSpeechRecognition' in window)) {
     // Checks browser support
-    document.getElementById('not-supported').classList.remove('hidden');
+    document.getElementById('sr-not-supported').classList.remove('hidden');
     
 } else {
     var recognition = new webkitSpeechRecognition();
@@ -58,3 +58,26 @@ function toggleRecognition(event) {
         document.getElementById('interim-span').innerHTML = '';
     }
 }
+
+// Speech Synthesis API
+if (!('speechSynthesis' in window)) {
+    // Checks browser support
+    document.getElementById('ss-not-supported').classList.remove('hidden');
+}
+
+var synthesisButton = document.getElementById('toggle-synthesis');
+
+synthesisButton.addEventListener('click', function(e) {
+    if (finalTranscript.length > 0) {
+        var spokenText = new SpeechSynthesisUtterance();
+        var voices = window.speechSynthesis.getVoices();
+        
+        spokenText.text = finalTranscript;
+        spokenText.volume = 1;
+        spokenText.rate = .8;
+        spokenText.pitch = 0.9;
+        //spokenText.voice = voices[34]; // Maged voice
+        
+        window.speechSynthesis.speak(spokenText);
+    }
+});
