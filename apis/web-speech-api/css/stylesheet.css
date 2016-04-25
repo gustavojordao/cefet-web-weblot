@@ -1,12 +1,17 @@
+/* FONTS */
 @import url(https://fonts.googleapis.com/css?family=Megrim);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 /* CLASSES */
-
-/* Display */
-.flex-center-container {
+.flex-column-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -14,13 +19,9 @@
     display: none;
 }
 
-.text-center {
-    text-align: center;
-}
-
 /* IDs */
 #mic {
-    width: 50px;
+    width: 60px;
     
     -webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
@@ -37,6 +38,16 @@
     transform: scale(1.5);
 }
 
+#not-supported {
+    color: #66ff00;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+}
+
+#interim-span {
+    color: #ffba00;
+}
+
 /* TAGS */
 body {
     background-color: #db143c;
@@ -45,10 +56,20 @@ body {
 button {
     background-color: inherit;
     border: none;
+    
+    text-align: center;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+em {
+    color: #66ff00;
+    font-style: normal;
+    
+    display: inline-block;
+    margin-top: 5px;
 }
 
 h1 {
@@ -62,26 +83,17 @@ h1 {
 p {
     color: #ffffff;
     font-family: 'Poiret One', cursive;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-align: left;
     
-    margin-bottom: 0.5em;
+    padding-left: 10px;
 }
 
 span {
     color: #66ff00;
-    font-family: 'Poiret One', cursive;
-    font-size: 1.5em;
-}
-
-textarea {
-    color: #66ff00;
     font-family: 'Megrim', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 700;
     
-    background-color: inherit;
-    margin: .5em;
-    border: 0;
-    
-    width: 80%;
-    height: 200px;
+    padding: 10px;
 }

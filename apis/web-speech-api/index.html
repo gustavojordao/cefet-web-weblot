@@ -8,16 +8,27 @@
         <script src="js/script.js"></script>
     </head>
     
-    <body class="flex-center-container">
+    <body class="flex-column-container">
         <h1>Web Speech API</h1>
-        <p>Click on the mic and start speaking:</p>
-        <button id="start-speech" onclick="startRecognition()">
-            <img src="img/mic.png" alt="Microphone" id="mic">
-        </button>
         
-        <textarea id="voice-to-text" readonly="readonly" rows="3"></textarea>
+        <div class="flex-row-container">
+            <button id="toggle-speech" class="float-left" onclick="toggleRecognition(event)">
+                <img src="img/mic.svg" alt="Microphone" id="mic">
+            </button>
+            
+            <p>Click on the mic<br>
+                <em id="start-speech">TO START</em>
+                <em id="stop-speech" class="hidden">TO STOP</em>
+                <br>recognition
+            </p>
+        </div>
         
         <span class="hidden" id="not-supported">Oh no! Your browser doesn't support this API!</span>
+        
+        <div id="results">
+            <span id="final-span"></span>
+            <span id="interim-span"></span>
+        </div>
         
     </body>
 </html>
