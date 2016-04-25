@@ -23,6 +23,8 @@ Trabalho realizado para a disciplina de Programação para Web ministrada pelo P
 
 *Atribuições*
 - Slides construídos através do [Slides.com][source1]
+- Fonte [Megrim][source2], por Daniel Johnson
+- Fonte [Poiret One][source3], por Denis Masharov
 
 *Referências*
 - [Especificação do _Web Speech API_ no W3C][ref1]
@@ -30,4 +32,6 @@ Trabalho realizado para a disciplina de Programação para Web ministrada pelo P
 [seminar]: 
 [example]: 
 [source1]: https://slides.com
+[source2]: https://www.google.com/fonts/specimen/Megrim
+[source3]: https://www.google.com/fonts/specimen/Poiret+One
 [ref1]: https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html
