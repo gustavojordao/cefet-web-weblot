@@ -36,7 +36,7 @@ Trabalho realizado para a disciplina de Programação para Web ministrada pelo P
 - _Web Apps That Talk: Introduction to the Speech Synthesis API_, no [Google Developers][ref3]
 
 [seminar]: http://slides.com/pedrofelipefroes/web-speech-api/fullscreen
-[example]: https://github.com/pedrofelipefroes/cefet-web-weblot/tree/2016/01/apis/web-speech-api
+[example]: http://pedrofelipefroes.github.io/cefet-web-weblot/apis/web-speech-api/index.html
 [source1]: https://slides.com
 [source2]: https://www.google.com/fonts/specimen/Megrim
 [source3]: https://www.google.com/fonts/specimen/Poiret+One
