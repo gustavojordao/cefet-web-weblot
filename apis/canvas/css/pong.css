@@ -1,0 +1,13 @@
+canvas{
+    background-color: #006600;
+    position: relative;
+}
+
+#mensagem-inicial{
+    margin-left: 150px;
+    font-size: 50px;
+}
+
+.oculto{
+    display: none;
+}
