@@ -25,11 +25,11 @@ Autor(es):
 
 ## Referências
 
--[W3.org][page-w3]
--[QNimate][page-qnimate]
--[MDN - Mozilla Developer Network - Web Cryptography][page-webcryp]
--[Can I Use][page-caniuse]
--[envatotuts+][page-tuts+]
+- [W3.org][page-w3]
+- [QNimate][page-qnimate]
+- [MDN - Mozilla Developer Network - Web Cryptography][page-webcryp]
+- [Can I Use][page-caniuse]
+- [envatotuts+][page-tuts+]
 
 [page-w3]: https://www.w3.org/TR/WebCryptoAPI/
 [page-qnimate]: http://qnimate.com/post-series/web-cryptography-api-tutorial/

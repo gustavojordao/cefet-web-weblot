@@ -25,11 +25,11 @@ Autor(es):
 
 ## Referências
 
--[MDN - Mozilla Developer Network][page-mozilla]
--[MDN - Mozilla Developer Network - Media Streams][page-media]
--[HTML5 ROCKS][page-rocks]
--[DWB][page-dwb]
--[envatotuts+][page-tuts+]
+- [MDN - Mozilla Developer Network][page-mozilla]
+- [MDN - Mozilla Developer Network - Media Streams][page-media]
+- [HTML5 ROCKS][page-rocks]
+- [DWB][page-dwb]
+- [envatotuts+][page-tuts+]
 
 [page-mozilla]: https://developer.mozilla.org/pt-BR/docs/Web/API/Navigator/getUserMedia
 [page-media]: https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API#LocalMediaStream
