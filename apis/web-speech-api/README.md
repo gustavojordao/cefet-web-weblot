@@ -2,6 +2,8 @@
 
 A _web speech API_ proporciona reconhecimento e síntese de fala (voz para texto e texto para voz, respectivamente) através das APIs de _Speech Recognition_ e _Speech Synthesis_, ambas desenvolvidas e publicadas pela Google em 2012.
 
+![](img/screenshot.png)
+
 ## Links
 
 - [Seminário][seminar]
@@ -33,8 +35,8 @@ Trabalho realizado para a disciplina de Programação para Web ministrada pelo P
 - _Voice Driven Web Apps: Introduction to the Web Speech API_, no [Google Developers][ref2]
 - _Web Apps That Talk: Introduction to the Speech Synthesis API_, no [Google Developers][ref3]
 
-[seminar]: 
-[example]: 
+[seminar]: http://slides.com/pedrofelipefroes/web-speech-api/fullscreen
+[example]: https://github.com/pedrofelipefroes/cefet-web-weblot/tree/2016/01/apis/web-speech-api
 [source1]: https://slides.com
 [source2]: https://www.google.com/fonts/specimen/Megrim
 [source3]: https://www.google.com/fonts/specimen/Poiret+One
