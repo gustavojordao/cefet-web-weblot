@@ -72,7 +72,15 @@ synthesisButton.addEventListener('click', function(e) {
         var spokenText = new SpeechSynthesisUtterance();
         var voices = window.speechSynthesis.getVoices();
         
-        spokenText.text = finalTranscript;
+        // Easter egg
+        if (finalTranscript == "I like Lana Del Rey") {
+            spokenText.text = "Me too, she's the best singer in the world!";
+        } else if (finalTranscript == "tell me your secrets") {
+            spokenText.text = "You know I can't really say that";
+        } else {
+            spokenText.text = finalTranscript;
+        }
+        
         spokenText.volume = 1;
         spokenText.rate = .8;
         spokenText.pitch = 0.9;
